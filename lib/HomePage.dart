@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
+import 'FIRpage.dart';
 import 'login.dart';
 
 class Homepage extends StatefulWidget {
@@ -34,19 +35,19 @@ class _HomepageState extends State<Homepage> {
                       text: const TextSpan(
                         children: <TextSpan>[
                           TextSpan(
-                              text: 'Develop ',
+                              text: 'Hello, I’m ',
                               style: TextStyle(
                                   fontWeight: FontWeight.w900,
                                   color: Colors.black,
                                   fontSize: 32)),
                           TextSpan(
-                              text: 'Skills ',
+                              text: 'Judica ',
                               style: TextStyle(
                                   fontWeight: FontWeight.w900,
                                   color: Color.fromRGBO(251, 146, 60, 1),
                                   fontSize: 35)),
                           TextSpan(
-                              text: 'from the best source',
+                              text: 'your legal assistant.',
                               style: TextStyle(
                                   fontWeight: FontWeight.w900,
                                   color: Colors.black,
@@ -64,7 +65,7 @@ class _HomepageState extends State<Homepage> {
                         text: const TextSpan(children: <TextSpan>[
                           TextSpan(
                               text:
-                                  'We aim to inspire a love for learning by creating an environments where students can explore their interests, develop new skills, and reach their full potential. Join us on this exciting educational adventure and discover the joy of learning with EduCEC!',
+                                  'I’m here to make legal help easier and more accessible for everyone. I support three types of users: advocates, police officers, and everyday people.',
                               style: TextStyle(
                                   letterSpacing: 1,
                                   height: 1.3,
@@ -162,7 +163,7 @@ class _HomepageState extends State<Homepage> {
                         alignment: Alignment.centerLeft,
                         child: ElevatedButton(
                           onPressed: () {
-                            //Navigator.push(context, MaterialPageRoute(builder: (context)=> const LoginPage()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=> FirComponent()));
 
                           },
                           style: ElevatedButton.styleFrom(
