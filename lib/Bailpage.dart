@@ -12,7 +12,7 @@ class _BailpageState extends State<Bailpage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bailpage"),
+        title: const Text("Bailpage"),
       ),
     );
   }
