@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:judica/HomePage.dart';
+import 'package:judica/slpash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Homepage(),
+      home: const SplashScreen(),
     );
 }
 }
