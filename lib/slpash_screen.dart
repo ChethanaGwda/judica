@@ -3,6 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
+import 'auth/auth.dart';
+import 'login.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -14,34 +17,31 @@ class _SplashScreenState extends State<SplashScreen> {
   final List<Map<String, String>> content = [
     {
       'animation': 'assets/1.json', // Replace with valid Lottie asset paths
-      'title': 'Welcome',
-      'paragraph': 'Discover new horizons with our app.'
+      'title': 'Hello, I’m Judica your Legal Assistant.',
+      'paragraph': 'My mission is to make sure everyone gets the support they need in the legal system. Whether you’re seeking advice, looking for guidance on bail, or need a quick understanding of legal terms, I’m here to help.'
     },
     {
       'animation': 'assets/2.json',
-      'title': 'Learn',
-      'paragraph': 'Learn and grow with interactive content.'
+      'title': 'Making Legal Support Legal Support Clear and Accessible. ',
+      'paragraph': 'I simplify complex legal terms and processes, helping regular users understand their rights and options. Whether facing a legal issue or navigating the bail process, I provide clear, straightforward guidance. My goal is to ensure everyone has access to reliable legal support, regardless of who they are.',
+    },
+    {
+      'animation': 'assets/4.json',
+      'title': 'Empowering Advocates with Quick, Reliable Legal Resources.',
+      'paragraph':  'I provide advocates with fast and dependable access to essential legal resources, from case references and legal precedents to procedural guidelines. My goal is to streamline your work, allowing you to focus more on effectively supporting your clients.',
     },
     {
       'animation': 'assets/3.json',
-      'title': 'Connect',
-      'paragraph': 'Connect with like-minded individuals.'
-    },
-    {
-      'animation': 'assets/achieve.json',
-      'title': 'Achieve',
-      'paragraph': 'Achieve your goals with our tools.'
-    },
-    {
-      'animation': 'assets/explore.json',
-      'title': 'Explore',
-      'paragraph': 'Explore endless opportunities.'
+      'title': 'Streamlining FIR Filing with Accurate Legal Language.',
+      'paragraph': 'I assist police officers by transforming individual complaints into accurate legal language using NLP, identifying relevant laws and sections to simplify and expedite FIR filing. This ensures the FIR aligns with legal standards, enabling officers to respond to complaints more efficiently, even without immediate access to a legal expert.',
     },
   ];
 
   int _currentPage = 0;
   late PageController _pageController;
   late Timer _timer;
+
+  get onTap => null;
 
   @override
   void initState() {
@@ -113,6 +113,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       // Title
                       Text(
                         content[index]['title']!,
+                        textAlign: TextAlign.center,
                         style: const TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
@@ -136,8 +137,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       // "Get Started" Button
                       ElevatedButton(
                         onPressed: () {
-                          // Define navigation or action for this button
-                          Navigator.pushReplacementNamed(context, '/home');
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginPage(onTap: onTap)));
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.blueAccent,

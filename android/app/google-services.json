@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "636016915209",
+    "project_id": "judica-cc7c2",
+    "storage_bucket": "judica-cc7c2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636016915209:android:893e6cd1793b97b318d9d8",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5vx2vUEMXciCEq9bgMKj_H42Jzz8TH1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636016915209:android:a119dc49b077eaac18d9d8",
+        "android_client_info": {
+          "package_name": "com.example.judica"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5vx2vUEMXciCEq9bgMKj_H42Jzz8TH1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

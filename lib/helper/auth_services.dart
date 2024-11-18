@@ -2,10 +2,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:judica/advocate_home.dart';
+import 'package:judica/police_home.dart';
+import 'package:judica/user_home.dart';
 
-import '../pages/ParentHome.dart';
-import '../pages/TEACHER/TeacherHome.dart';
-import '../pages/STUDENT/StudentHome.dart';
 
 //changed document name to user email id
 class AuthServices {
@@ -60,20 +60,20 @@ class AuthServices {
             .get();
         String role = userRoleDoc['role'];
         // Navigate to the appropriate home page based on the role
-        if (role == 'Teacher') {
+        if (role == 'Citizen') {
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => const TeacherHome()),
+            MaterialPageRoute(builder: (context) => const UserHome()),
           );
-        } else if (role == 'Student') {
+        } else if (role == 'Advocate') {
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => const StudentHome()),
+            MaterialPageRoute(builder: (context) => const AdvocateHome()),
           );
-        } else if (role == 'Parent') {
+        } else if (role == 'Police') {
           Navigator.pushReplacement(
             context,
-            MaterialPageRoute(builder: (context) => const ParentHome()),
+            MaterialPageRoute(builder: (context) => const PoliceHome()),
           );
         } else {
           ScaffoldMessenger.of(context).showSnackBar(

@@ -1,12 +1,11 @@
-import 'package:edu_link/auth/login_or_register.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
-import '../pages/ParentHome.dart';
-import '../pages/TEACHER/TeacherHome.dart';
-import '../pages/STUDENT/StudentHome.dart';
+import 'package:judica/advocate_home.dart';
+import 'package:judica/police_home.dart';
+import '../slpash_screen.dart';
+import '../user_home.dart'; // Import your splash screen here
 
 class Authpage extends StatelessWidget {
   const Authpage({super.key});
@@ -28,21 +27,17 @@ class Authpage extends StatelessWidget {
 
   Future<Widget> getUserHomePage(User? user) async {
     if (user == null) {
-      return const LoginOrRegister();
+      return const SplashScreen(); // Redirect to SplashScreen if the user is not logged in
     }
 
     String role = await getUserRole(user.email!);
 
-    switch (role) {
-      case 'Teacher':
-        return const TeacherHome();
-      case 'Student':
-        return const StudentHome();
-      case 'Parent':
-        return const ParentHome();
-      default:
-        return const LoginOrRegister();
-    }
+    return switch (role) {
+      'Citizen' => const UserHome(),
+      'Police' => const PoliceHome(),
+      'Advocate' => const AdvocateHome(),
+      _ => const SplashScreen() // Redirect to SplashScreen if the role is undefined
+    };
   }
 
   @override
@@ -69,11 +64,11 @@ class Authpage extends StatelessWidget {
                 if (snapshot.hasError) {
                   return const Center(child: Text('Error fetching user role'));
                 }
-                return snapshot.data ?? const LoginOrRegister();
+                return snapshot.data ?? const SplashScreen();
               },
             );
           } else {
-            return const LoginOrRegister();
+            return const SplashScreen(); // Show SplashScreen if the user is not authenticated
           }
         },
       ),
