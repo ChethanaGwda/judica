@@ -103,24 +103,24 @@ $ python app.py
 
 ## Usage
 ### For Common Users
-  Interact with the chatbot by typing questions in natural language.
-  Example:
-    What are my rights as a tenant?
-    How can I file a consumer complaint?
+  * Interact with the chatbot by typing questions in natural language.
+  * Example:
+    * What are my rights as a tenant?
+    * How can I file a consumer complaint?
 
 ### For Advocates
-  Access the Bail Reckoner feature by selecting the relevant mode in the chatbot interface.
-  Input details such as:
-    Nature of the offense
-    Background of the accused
-    Any special circumstances
+  * Access the Bail Reckoner feature by selecting the relevant mode in the chatbot interface.
+  * Input details such as:
+    * Nature of the offense
+    * Background of the accused
+    * Any special circumstances
 
 ### For Police Officers
-  Use the FIR Filing feature to draft FIRs.
-  Input key details such as:
-  Type of crime
-  Incident date and location
-  Suspect and witness details
+  * Use the FIR Filing feature to draft FIRs.
+  * Input key details such as:
+    * Type of crime
+    * Incident date and location
+    * Suspect and witness details
 
 ## Contributing
   
