@@ -19,27 +19,27 @@ Judica is an innovative legal-tech project aimed at simplifying access to legal 
 
 NOTE: Contents under this note is still in progress DO NOT REFER ANYTHING BELOW THIS LINE
 
-## Key Features:
+# Key Features:
 
   ## Legal Information Chatbot
 
-    - Offers general legal information to common users.
-    - Uses natural language processing (NLP) to simplify complex legal terms.
-    - Covers various topics including civil rights, criminal law, property disputes, and more.
+    * Offers general legal information to common users.
+    * Uses natural language processing (NLP) to simplify complex legal terms.
+    * Covers various topics including civil rights, criminal law, property disputes, and more.
 
   ## Bail Reckoner (for Advocates)
 
-    - Assesses bail eligibility for undertrial convicts.
-    - Provides legal precedents and eligibility criteria based on relevant laws and judgments.
-    - Designed to save time by automating preliminary bail analysis.
+    * Assesses bail eligibility for undertrial convicts.
+    * Provides legal precedents and eligibility criteria based on relevant laws and judgments.
+    * Designed to save time by automating preliminary bail analysis.
 
   ## FIR Filing Assistance (for Police Officers)
 
-    - Streamlines the creation of First Information Reports (FIRs).
-    - Generates FIRs in PDF format with crime-specific legal references.
-    - Offers contextual legal information to ensure accurate documentation.
+    * Streamlines the creation of First Information Reports (FIRs).
+    * Generates FIRs in PDF format with crime-specific legal references.
+    * Offers contextual legal information to ensure accurate documentation.
 
-## Table of Contents
+# Table of Contents
 
   - Getting Started
   - Features
@@ -50,68 +50,72 @@ NOTE: Contents under this note is still in progress DO NOT REFER ANYTHING BELOW 
     - For Police Officers
   - Contributing
 
-## Getting Started
+# Getting Started
 
 To begin using Judica, clone the repository and follow the setup instructions below.
 
-# Prerequisites
+## Prerequisites
   - Python 3.8+
   - pip
   - Firebase
   - Dependencies (listed in requirements.txt)
 
-# Features
+## Features
 
-  # 1. Legal Information Chatbot
+  ### 1. Legal Information Chatbot
   Target Users: Common citizens
   Capabilities:
     - Provide easy-to-understand legal guidance.
     - Offer summaries of laws, legal rights, and procedural information.
   
-  # 2. Bail Reckoner (Advocates)
+  ### 2. Bail Reckoner (Advocates)
   Functionality:
     - Analyze bail eligibility based on inputs like charges, nature of crime, and prior convictions.
     - Reference case laws and precedents dynamically.
   
-  # 3. FIR Filing Assistance (Police Officers)
+  ### 3. FIR Filing Assistance (Police Officers)
   Functionality:
     - Formulates FIRs using user inputs such as crime details, suspect information, and evidence descriptions.
     - Generates legally compliant PDFs for record-keeping and judicial use.
 
 ## Installation
 
-Clone the Repository:
+### Clone the Repository:
+---
+$ git clone https://github.com/yourusername/judica.git
+$ cd judica
+---
 
-bash->git clone https://github.com/yourusername/judica.git->cd judica
+### Install Dependencies:
+---
+$ pip install -r requirements.txt
+---
 
-Install Dependencies:
-
-bash->pip install -r requirements.txt
-
-Set Up Database:
+### Set Up Database:
 
 Ensure Firebase is running on your system.
 Update the config.py file with your MongoDB URI and database name.
 
 Run the Application:
-
-bash->python app.py
+---
+$ python app.py
+---
 
 ## Usage
-# For Common Users
+### For Common Users
   Interact with the chatbot by typing questions in natural language.
   Example:
     What are my rights as a tenant?
     How can I file a consumer complaint?
 
-# For Advocates
+### For Advocates
   Access the Bail Reckoner feature by selecting the relevant mode in the chatbot interface.
   Input details such as:
     Nature of the offense
     Background of the accused
     Any special circumstances
 
-# For Police Officers
+### For Police Officers
   Use the FIR Filing feature to draft FIRs.
   Input key details such as:
   Type of crime
@@ -120,22 +124,22 @@ bash->python app.py
   Contributing
   We welcome contributions to improve Judica!
 
-Fork the repository.
+## Fork the repository.
 
-Create a feature branch:
+### Create a feature branch:
+---
+$ git checkout -b feature-name
+---
 
-bash
-git checkout -b feature-name
-
-Commit your changes and push them:
-bash
-git commit -m "Description of changes"
-git push origin feature-name
-
+### Commit your changes and push them:
+---
+$ git commit -m "Description of changes"
+$ git push origin feature-name
+---
 Create a pull request.
 
-Contact
+## Contact
 For further queries, reach out to:
 
-Email: support@judica.com
-Website: Judica Official Site
+* Email: support@judica.com
+* Website: Judica Official Site
