@@ -63,20 +63,20 @@ To begin using Judica, clone the repository and follow the setup instructions be
 ## Features
 
   ### 1. Legal Information Chatbot
-  Target Users: Common citizens
-  Capabilities:
-    - Provide easy-to-understand legal guidance.
-    - Offer summaries of laws, legal rights, and procedural information.
+  * Target Users: Common citizens
+  * Capabilities:
+    * Provide easy-to-understand legal guidance.
+    * Offer summaries of laws, legal rights, and procedural information.
   
   ### 2. Bail Reckoner (Advocates)
-  Functionality:
-    - Analyze bail eligibility based on inputs like charges, nature of crime, and prior convictions.
-    - Reference case laws and precedents dynamically.
+  * Functionality:
+    * Analyze bail eligibility based on inputs like charges, nature of crime, and prior convictions.
+    * Reference case laws and precedents dynamically.
   
   ### 3. FIR Filing Assistance (Police Officers)
-  Functionality:
-    - Formulates FIRs using user inputs such as crime details, suspect information, and evidence descriptions.
-    - Generates legally compliant PDFs for record-keeping and judicial use.
+  * Functionality:
+    * Formulates FIRs using user inputs such as crime details, suspect information, and evidence descriptions.
+    * Generates legally compliant PDFs for record-keeping and judicial use.
 
 ## Installation
 
@@ -128,12 +128,12 @@ We welcome contributions to improve Judica!
 
 ### Fork the repository.
 
-#### Create a feature branch:
+* Create a feature branch:
 ```
 $ git checkout -b feature-name
 ```
 
-#### Commit your changes and push them:
+* Commit your changes and push them:
 ```
 $ git commit -m "Description of changes"
 $ git push origin feature-name
