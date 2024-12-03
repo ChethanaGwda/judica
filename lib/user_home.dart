@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:judica/profile.dart';
-
 import 'FIRpage.dart';
+import 'login.dart';
 
 class UserHome extends StatefulWidget {
   const UserHome({super.key});
@@ -16,9 +16,9 @@ class _UserHomeState extends State<UserHome> {
 
   // Define the pages for navigation
   static final List<Widget> _pages = <Widget>[
-    UserHome(),
-    FirComponent(),
-    ProfilePage()
+    Center(child: Text('Home Page Content')), // Placeholder for Home Page
+    FirComponent(), // FIR-related component
+    ProfilePage(), // Profile Page
   ];
 
   // Function to handle tab selection
@@ -29,8 +29,8 @@ class _UserHomeState extends State<UserHome> {
   }
 
   // Logout function
-  void _logout() {
-    FirebaseAuth.instance.signOut();// Navigate to the login page
+  void _logout() async {
+    await FirebaseAuth.instance.signOut(); // Sign out the user
   }
 
   @override
@@ -54,13 +54,12 @@ class _UserHomeState extends State<UserHome> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
+            icon: Icon(Icons.assignment), // Updated icon for FIR
+            label: 'FIR',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',
-
           ),
         ],
         currentIndex: _selectedIndex, // Highlight the selected tab

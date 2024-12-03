@@ -10,10 +10,6 @@ class FirComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Judica"),
-        backgroundColor: const Color.fromRGBO(255, 125, 41, 1),
-      ),
       body: Center(
           child: Stack(
               fit: StackFit.expand,
