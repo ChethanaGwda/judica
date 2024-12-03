@@ -17,7 +17,7 @@ samples, guidance on mobile development, and a full API reference.
 
 Judica is an innovative legal-tech project aimed at simplifying access to legal information for different types of users. It incorporates a conversational chatbot that provides legal insights tailored to the needs of common citizens, advocates, and police officers.
 
-NOTE: Contents under this note is still in progress DO NOT REFER ANYTHING BELOW THIS LINE
+# NOTE: Contents under this note is still in progress DO NOT REFER ANYTHING BELOW THIS LINE
 
 # Key Features:
 
