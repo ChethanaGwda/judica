@@ -63,18 +63,18 @@ To begin using Judica, clone the repository and follow the setup instructions be
 ## Features
 
   ### 1. Legal Information Chatbot
-  * Target Users: Common citizens
-  * Capabilities:
+  * **Target Users:** Common citizens
+  * *Capabilities:*
     * Provide easy-to-understand legal guidance.
     * Offer summaries of laws, legal rights, and procedural information.
   
   ### 2. Bail Reckoner (Advocates)
-  * Functionality:
+  * *Functionality:*
     * Analyze bail eligibility based on inputs like charges, nature of crime, and prior convictions.
     * Reference case laws and precedents dynamically.
   
   ### 3. FIR Filing Assistance (Police Officers)
-  * Functionality:
+  * *Functionality:*
     * Formulates FIRs using user inputs such as crime details, suspect information, and evidence descriptions.
     * Generates legally compliant PDFs for record-keeping and judicial use.
 
@@ -93,8 +93,8 @@ $ pip install -r requirements.txt
 
 ### Set Up Database:
 
-Ensure Firebase is running on your system.
-Update the config.py file with your MongoDB URI and database name.
+Ensure `Firebase` is running on your system.
+Update the `config.py` file with your `Firebase URI` and `database name`.
 
 Run the Application:
 ```
@@ -104,20 +104,20 @@ $ python app.py
 ## Usage
 ### For Common Users
   * Interact with the chatbot by typing questions in natural language.
-  * Example:
+  * **Example:**
     * What are my rights as a tenant?
     * How can I file a consumer complaint?
 
 ### For Advocates
   * Access the Bail Reckoner feature by selecting the relevant mode in the chatbot interface.
-  * Input details such as:
+  * **Input details such as:**
     * Nature of the offense
     * Background of the accused
     * Any special circumstances
 
 ### For Police Officers
   * Use the FIR Filing feature to draft FIRs.
-  * Input key details such as:
+  * **Input key details such as:**
     * Type of crime
     * Incident date and location
     * Suspect and witness details
