@@ -81,15 +81,15 @@ To begin using Judica, clone the repository and follow the setup instructions be
 ## Installation
 
 ### Clone the Repository:
----
+```
 $ git clone https://github.com/yourusername/judica.git
 $ cd judica
----
+```
 
 ### Install Dependencies:
----
+```
 $ pip install -r requirements.txt
----
+```
 
 ### Set Up Database:
 
@@ -97,9 +97,9 @@ Ensure Firebase is running on your system.
 Update the config.py file with your MongoDB URI and database name.
 
 Run the Application:
----
+```
 $ python app.py
----
+```
 
 ## Usage
 ### For Common Users
@@ -121,24 +121,26 @@ $ python app.py
   Type of crime
   Incident date and location
   Suspect and witness details
-  Contributing
-  We welcome contributions to improve Judica!
 
-## Fork the repository.
+## Contributing
+  
+We welcome contributions to improve Judica!
 
-### Create a feature branch:
----
+### Fork the repository.
+
+#### Create a feature branch:
+```
 $ git checkout -b feature-name
----
+```
 
-### Commit your changes and push them:
----
+#### Commit your changes and push them:
+```
 $ git commit -m "Description of changes"
 $ git push origin feature-name
----
+```
 Create a pull request.
 
-## Contact
+### Contact
 For further queries, reach out to:
 
 * Email: support@judica.com
